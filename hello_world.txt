@@ -1,5 +1,5 @@
 Hello, world!
-こんにちは　世界！ 
+こんばんは　世界！ 
 
 hiroseyukihiro@hiroseyukihironoMacBook-Pro git-basic-kadai % git add hello_world.txt
 fatal: pathspec 'hello_world.txt' did not match any files
