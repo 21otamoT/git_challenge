@@ -1,0 +1,34 @@
+Hello, world!
+こんにちは　世界！ 
+
+hiroseyukihiro@hiroseyukihironoMacBook-Pro git-basic-kadai % git add hello_world.txt
+fatal: pathspec 'hello_world.txt' did not match any files
+hiroseyukihiro@hiroseyukihironoMacBook-Pro git-basic-kadai % git add ./hello_world.txt
+fatal: pathspec './hello_world.txt' did not match any files
+hiroseyukihiro@hiroseyukihironoMacBook-Pro git-basic-kadai % git add kadai_004        
+hiroseyukihiro@hiroseyukihironoMacBook-Pro git-basic-kadai % git commit -m "ファイル名の変更"
+[main 6ff7509] ファイル名の変更
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename kadai_004/{kadai004.txt => hello_world.txt} (100%)
+hiroseyukihiro@hiroseyukihironoMacBook-Pro git-basic-kadai % git add ./hello_world.txt       
+fatal: pathspec './hello_world.txt' did not match any files
+hiroseyukihiro@hiroseyukihironoMacBook-Pro git-basic-kadai % git add kadai_004               
+hiroseyukihiro@hiroseyukihironoMacBook-Pro git-basic-kadai % git commit -m "hello_world.txtを追加"
+[main b44030a] hello_world.txtを追加
+ 1 file changed, 1 insertion(+), 13 deletions(-)
+hiroseyukihiro@hiroseyukihironoMacBook-Pro git-basic-kadai % git add kadai_004                    
+hiroseyukihiro@hiroseyukihironoMacBook-Pro git-basic-kadai % git commit -m "日本語訳を追記"       
+[main 437a8bf] 日本語訳を追記
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+hiroseyukihiro@hiroseyukihironoMacBook-Pro git-basic-kadai % git log
+commit 437a8bfa87ce8dfc2f02c58c3828ccf5ab562446 (HEAD -> main)
+Author: hirose <yukihio76@gmail.com>
+Date:   Thu Nov 23 18:05:46 2023 +0900
+
+    日本語訳を追記
+
+commit b44030a8d92b6c97616e760e645f0257cd5c7a62
+Author: hirose <yukihio76@gmail.com>
+Date:   Thu Nov 23 18:05:01 2023 +0900
+
+    hello_world.txtを追加
